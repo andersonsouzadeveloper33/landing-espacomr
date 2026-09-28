@@ -6,7 +6,7 @@
   1. Domínio: trocar as URLs canonical/og:url abaixo por https://espacomr.com.br quando o domínio estiver registrado.
   2. Fotos: substituir os placeholders (elementos .ph-img) em /images por fotos reais (hero, galeria antes/depois). og:image também está usando a logo como provisório — trocar por uma foto real de destaque.
   3. Depoimentos: preenchidos com 2 avaliações reais do Google (Nágila Rachel, Mariela Toledo Catani), copiadas manualmente em 2026-09-25. Item concluído — dá pra trocar por outras quando quiser.
-  4. Serviços: os itens listados (Design de Sobrancelhas, Microblading — vindos da própria logo — e Brow Lamination, do briefing) precisam de preço real; a lista completa ainda precisa ser confirmada.
+  4. Procedimentos: a página mostra 7 procedimentos-base (sem preço, por decisão do cliente — a variação de combos/preços fica só no agendamento). As descrições em #servicos são rascunho meu, dá pra revisar o texto se quiser algo mais específico da técnica usada.
   5. Endereço: preenchido (Av. Braz Olaia Acosta, 1900 — Jardim Nova Aliança Sul, Ribeirão Preto - SP). Item concluído.
   6. Horário: preenchido a partir do Google Business Profile (Seg-Sex 08h-20h, Sáb 08h-18h, Dom fechado). WhatsApp já preenchido (+55 16 98133-6369); botão "Ligar" foi removido por decisão do cliente. Item concluído.
   7. GA4 + Google Ads: o bloco de tags de conversão está comentado no fim do <head> — só descomentar e preencher os IDs depois que as contas GA4/Google Ads existirem, e validar no GA4 DebugView / Tag Assistant ANTES de rodar tráfego pago.
@@ -138,115 +138,51 @@ Antes de rodar tráfego pago, validar em GA4 DebugView e no Tag Assistant.
   <!-- SERVIÇOS -->
   <section class="services" id="servicos" aria-labelledby="services-title">
     <div class="wrap">
-      <p class="eyebrow">Serviços</p>
+      <p class="eyebrow">Procedimentos</p>
       <h2 id="services-title" class="section-title">O que fazemos</h2>
 
-      <div class="service-group">
-        <h3 class="service-group__title">Design de Sobrancelhas</h3>
-        <ul class="service-list">
-          <li class="service-item">
-            <div class="service-item__info">
-              <span class="service-item__name">Design de Sobrancelhas</span>
-              <span class="service-item__duration">30 min</span>
-            </div>
-            <span class="service-item__price">R$ 80</span>
-          </li>
-          <li class="service-item">
-            <div class="service-item__info">
-              <span class="service-item__name">Design de Sobrancelhas + Buço</span>
-              <span class="service-item__duration">30 min</span>
-            </div>
-            <span class="service-item__price">R$ 90</span>
-          </li>
-          <li class="service-item">
-            <div class="service-item__info">
-              <span class="service-item__name">Design de Sobrancelhas + Henna</span>
-              <span class="service-item__duration">30 min</span>
-            </div>
-            <span class="service-item__price">R$ 95</span>
-          </li>
-          <li class="service-item">
-            <div class="service-item__info">
-              <span class="service-item__name">Design de Sobrancelhas + Henna + Buço</span>
-              <span class="service-item__duration">30 min</span>
-            </div>
-            <span class="service-item__price">R$ 105</span>
-          </li>
-          <li class="service-item">
-            <div class="service-item__info">
-              <span class="service-item__name">Design de Sobrancelhas + Tintura</span>
-              <span class="service-item__duration">30 min</span>
-            </div>
-            <span class="service-item__price">R$ 95</span>
-          </li>
-          <li class="service-item">
-            <div class="service-item__info">
-              <span class="service-item__name">Design de Sobrancelhas + Tintura + Buço</span>
-              <span class="service-item__duration">30 min</span>
-            </div>
-            <span class="service-item__price">R$ 105</span>
-          </li>
-          <li class="service-item">
-            <div class="service-item__info">
-              <span class="service-item__name">Design de Sobrancelhas para 2 pessoas</span>
-              <span class="service-item__duration">60 min</span>
-            </div>
-            <span class="service-item__price">R$ 160</span>
-          </li>
-        </ul>
-      </div>
+      <div class="procedures-grid">
+        <article class="procedure-card">
+          <div class="ph-img ph-img--procedure" role="img" aria-label="Foto de Design de Sobrancelha — placeholder, substituir por foto real"><span class="ph-img__hint">Foto</span></div>
+          <h3 class="procedure-card__name">Design de Sobrancelha</h3>
+          <p class="procedure-card__desc">Mapeamento facial para definir o formato ideal para o seu rosto, com correção e alinhamento dos fios — a base de todo o trabalho no Espaço MR.</p>
+        </article>
 
-      <div class="service-group">
-        <h3 class="service-group__title">Microblading</h3>
-        <ul class="service-list">
-          <li class="service-item">
-            <div class="service-item__info">
-              <span class="service-item__name">Microblading Fio a Fio</span>
-              <span class="service-item__duration">120 min</span>
-            </div>
-            <span class="service-item__price">R$ 850</span>
-          </li>
-          <li class="service-item">
-            <div class="service-item__info">
-              <span class="service-item__name">Retoque de Microblading Fio a Fio</span>
-              <span class="service-item__duration">80 min</span>
-            </div>
-            <span class="service-item__price">R$ 450</span>
-          </li>
-        </ul>
-      </div>
+        <article class="procedure-card">
+          <div class="ph-img ph-img--procedure" role="img" aria-label="Foto de Aplicação de Henna — placeholder, substituir por foto real"><span class="ph-img__hint">Foto</span></div>
+          <h3 class="procedure-card__name">Aplicação de Henna</h3>
+          <p class="procedure-card__desc">Tintura que preenche falhas e reforça o desenho da sobrancelha, deixando o resultado do design mais marcante por mais tempo.</p>
+        </article>
 
-      <div class="service-group">
-        <h3 class="service-group__title">Brow Lamination</h3>
-        <ul class="service-list">
-          <li class="service-item">
-            <div class="service-item__info">
-              <span class="service-item__name">Brow Lamination</span>
-              <span class="service-item__duration">60 min</span>
-            </div>
-            <span class="service-item__price">R$ 220</span>
-          </li>
-          <li class="service-item">
-            <div class="service-item__info">
-              <span class="service-item__name">Brow Lightening</span>
-              <span class="service-item__duration">30 min</span>
-            </div>
-            <span class="service-item__price">R$ 130</span>
-          </li>
-        </ul>
-      </div>
+        <article class="procedure-card">
+          <div class="ph-img ph-img--procedure" role="img" aria-label="Foto de Brow Lamination — placeholder, substituir por foto real"><span class="ph-img__hint">Foto</span></div>
+          <h3 class="procedure-card__name">Brow Lamination</h3>
+          <p class="procedure-card__desc">Alinha os fios num único sentido, dando volume e uniformidade a sobrancelhas naturalmente rebeldes ou pouco preenchidas.</p>
+        </article>
 
-      <div class="service-group">
-        <h3 class="service-group__title">Lash Lifting</h3>
-        <ul class="service-list">
-          <li class="service-item">
-            <div class="service-item__info">
-              <span class="service-item__name">Lash Lifting</span>
-              <span class="service-item__duration">60 min</span>
-            </div>
-            <span class="service-item__price">R$ 200</span>
-          </li>
-        </ul>
+        <article class="procedure-card">
+          <div class="ph-img ph-img--procedure" role="img" aria-label="Foto de Lash Lifting — placeholder, substituir por foto real"><span class="ph-img__hint">Foto</span></div>
+          <h3 class="procedure-card__name">Lash Lifting</h3>
+          <p class="procedure-card__desc">Curva e realça os cílios naturais desde a raiz, sem extensões — efeito de máscara todos os dias.</p>
+        </article>
+
+        <article class="procedure-card">
+          <div class="ph-img ph-img--procedure" role="img" aria-label="Foto de Micropigmentação Fio a Fio — placeholder, substituir por foto real"><span class="ph-img__hint">Foto</span></div>
+          <h3 class="procedure-card__name">Micropigmentação Fio a Fio</h3>
+          <p class="procedure-card__desc">Técnica que reproduz fio a fio o desenho natural da sobrancelha, ideal para quem tem falhas ou poucos pelos.</p>
+        </article>
+
+        <article class="procedure-card">
+          <div class="ph-img ph-img--procedure" role="img" aria-label="Foto de Limpeza de Pele — placeholder, substituir por foto real"><span class="ph-img__hint">Foto</span></div>
+          <h3 class="procedure-card__name">Limpeza de Pele</h3>
+          <p class="procedure-card__desc">Higienização profunda que remove impurezas e células mortas, deixando a pele do rosto mais leve e uniforme.</p>
+        </article>
+
+        <article class="procedure-card">
+          <div class="ph-img ph-img--procedure" role="img" aria-label="Foto de Depilação de Rosto — placeholder, substituir por foto real"><span class="ph-img__hint">Foto</span></div>
+          <h3 class="procedure-card__name">Depilação de Rosto</h3>
+          <p class="procedure-card__desc">Remoção dos pelos finos do rosto, deixando a pele lisa e realçando o resultado do design de sobrancelha.</p>
+        </article>
       </div>
 
       <a class="btn btn--primary" href="https://espacomr.zynor.app" data-cta="services">Agendar horário</a>
