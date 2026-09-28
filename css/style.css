@@ -319,14 +319,23 @@ h1, h2 { font-family: var(--font-display); margin: 0; line-height: 1.1; }
   gap: var(--space-3);
   margin-bottom: var(--space-3);
 }
+.procedure-card {
+  background: var(--blush);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.procedure-card .ph-img--procedure {
+  border-radius: 0;
+  margin: 0;
+}
 .procedure-card__name {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.15rem;
-  margin: 0.75em 0 0.3em;
+  margin: 0.85em var(--space-2) 0.3em;
 }
 .procedure-card__desc {
-  margin: 0;
+  margin: 0 var(--space-2) var(--space-3);
   font-size: 0.92rem;
   line-height: 1.5;
   color: var(--ink-soft);
